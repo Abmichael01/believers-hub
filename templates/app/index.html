@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find daily inspiration and spiritual insights on Believers Hub's 'Word for the Day' page. Get uplifting messages to boost your faith.">
+    <title>Word for the day | Belivers Hub</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="{% static 'images/image.jpg' %}" type="image/jpg">
+</head>
+<body>
+    <div class="half-bg"></div>
+    <div class="main-container">
+        <div class="image-sec">
+            <img src="{% static 'images/image.jpg' %}" alt="">
+        </div>
+        <div class="sec1">
+            <p>His Word For Today</p>
+            <p>"{{word.verse_content}}" - {{word.verse}}</p>
+        </div>
+
+        <div class="sec2">
+            <p>Motivation From His Word</p>
+            <p>{{word.motivation}}</p>
+        </div>
+
+        <div class="sec3">
+            <p>Prayer</p>
+            <p>{{word.prayer}}</p>
+        </div>
+
+        <div class="footer">
+            <div class="sec4">
+                <p>Join out Belivers Hub to study the world of God together</p>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> <span>Group</span></a>
+            </div>
+    
+            <div class="sec5">
+                <p>Follow us on our social</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
