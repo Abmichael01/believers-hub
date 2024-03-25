@@ -9,6 +9,8 @@
 
 body{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     padding: 40px;
@@ -38,12 +40,24 @@ body{
     right: 0;
 }
 
+header h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    margin-top: 50px;
+    font-family: "Anta";
+    letter-spacing: 1.5px;
+    text-shadow: 1px 2px 1px #a8eb12;
+}
+
 .main-container{
     width: 600px;
     /* height: 700px; */
     padding: 20px;
     border: 1px solid #b8b8b8;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
     z-index: 9;
     background: #fff;

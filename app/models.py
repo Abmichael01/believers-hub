@@ -10,3 +10,9 @@ class Word(models.Model):
 
     def __str__(self):
         return self.verse
+
+class Visit(models.Model):
+    count = models.IntegerField(default=0)
+
+    def __str__(self):
+        return str(self.count)+" Visits"
