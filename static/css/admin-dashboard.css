@@ -1,0 +1,41 @@
+.dashboard-cont{
+    background: #fff;
+    width: 700px;
+    padding: 30px;
+    min-height: 400px;
+    border: 1px solid #b8b8b8;
+    box-shadow: 0px 0px 20px #39363629;
+    position: relative;
+    z-index: 9;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+
+.dashboard .visits{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.dashboard h2{
+    font-size: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.dashboard .visits p{
+    font-size: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #00537a;
+    font-weight: 600;
+}

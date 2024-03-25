@@ -26,3 +26,8 @@ def index(request):
         "word": word,
     })
 
+def admin_dashboard(request):
+    todays_visit = Visit.objects.first()
+    return render(request, "app/admin-dashboard.html", {
+        "todays_visit": todays_visit,
+    })
