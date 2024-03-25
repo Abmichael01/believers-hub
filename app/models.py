@@ -12,7 +12,7 @@ class Word(models.Model):
         return self.verse
 
 class Visit(models.Model):
-    date = models.DateField(unique=True, null=tuple, blank=True)
+    date = models.DateField(unique=True, null=True, blank=True)
     count = models.IntegerField(default=0)
 
     def __str__(self):
