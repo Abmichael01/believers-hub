@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from . models import Word, Visit
+from datetime import date
 
 
 def index(request):
@@ -12,8 +13,9 @@ def index(request):
     #     request.session["visited"] = True
     
     # request.session["visited"] = True
+    today = date.today()
 
-    visit = Visit.objects.first()
+    visit, created = Visit.objects.get_or_create(date=today)
 
     visit.count += 1
 

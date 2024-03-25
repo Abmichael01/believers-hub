@@ -12,7 +12,8 @@ class Word(models.Model):
         return self.verse
 
 class Visit(models.Model):
+    date = models.DateField(unique=True, null=tuple, blank=True)
     count = models.IntegerField(default=0)
 
     def __str__(self):
-        return str(self.count)+" Visits"
+        return str(self.date)+" Visits is "+ str(self.count)
