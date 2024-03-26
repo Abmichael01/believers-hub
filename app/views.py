@@ -27,7 +27,8 @@ def index(request):
     })
 
 def admin_dashboard(request):
-    todays_visit = Visit.objects.first()
+    today = date.today()
+    todays_visit = Visit.objects.get(date=today)
     return render(request, "app/admin-dashboard.html", {
         "todays_visit": todays_visit,
     })
