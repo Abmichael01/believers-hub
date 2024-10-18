@@ -4,7 +4,10 @@ from datetime import date
 
 
 def index(request):
-    word = Word.objects.latest("created_at")
+    try:
+        word = Word.objects.latest("created_at")
+    except Word.DoesNotExist:
+        word = None
 
     # visited = request.session.get("visited", None)
 
